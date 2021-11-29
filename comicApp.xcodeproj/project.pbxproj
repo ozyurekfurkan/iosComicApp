@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8498D749819B868CA1D48BA /* Pods_comicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817B20360A2A773F5A07526B /* Pods_comicApp.framework */; };
+		EB941485274D2EC9001DF799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB941484274D2EC9001DF799 /* AppDelegate.m */; };
+		EB94148E274D2EC9001DF799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB94148C274D2EC9001DF799 /* Main.storyboard */; };
+		EB941490274D2ECA001DF799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB94148F274D2ECA001DF799 /* Assets.xcassets */; };
+		EB941493274D2ECA001DF799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB941491274D2ECA001DF799 /* LaunchScreen.storyboard */; };
+		EB941496274D2ECA001DF799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB941495274D2ECA001DF799 /* main.m */; };
+		EB9414A2274D2FF7001DF799 /* DetailsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9414A1274D2FF7001DF799 /* DetailsPageViewController.m */; };
+		EB9414A8274D3091001DF799 /* ComicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9414A7274D3091001DF799 /* ComicTableViewCell.m */; };
+		EB9414AC274D30C0001DF799 /* ComicResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9414AB274D30C0001DF799 /* ComicResponse.m */; };
+		EB9414B2274D357E001DF799 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9414B0274D357E001DF799 /* HomePageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09C4304DBED68E8490E0D46C /* Pods-comicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comicApp.debug.xcconfig"; path = "Target Support Files/Pods-comicApp/Pods-comicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		817B20360A2A773F5A07526B /* Pods_comicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9239E2D7F531C637D8F2A293 /* Pods-comicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comicApp.release.xcconfig"; path = "Target Support Files/Pods-comicApp/Pods-comicApp.release.xcconfig"; sourceTree = "<group>"; };
+		EB941480274D2EC9001DF799 /* comicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = comicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB941483274D2EC9001DF799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB941484274D2EC9001DF799 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB94148D274D2EC9001DF799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB94148F274D2ECA001DF799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB941492274D2ECA001DF799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB941494274D2ECA001DF799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB941495274D2ECA001DF799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB9414A0274D2FF7001DF799 /* DetailsPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsPageViewController.h; sourceTree = "<group>"; };
+		EB9414A1274D2FF7001DF799 /* DetailsPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsPageViewController.m; sourceTree = "<group>"; };
+		EB9414A6274D3091001DF799 /* ComicTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicTableViewCell.h; sourceTree = "<group>"; };
+		EB9414A7274D3091001DF799 /* ComicTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicTableViewCell.m; sourceTree = "<group>"; };
+		EB9414AA274D30C0001DF799 /* ComicResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicResponse.h; sourceTree = "<group>"; };
+		EB9414AB274D30C0001DF799 /* ComicResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicResponse.m; sourceTree = "<group>"; };
+		EB9414B0274D357E001DF799 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		EB9414B1274D357E001DF799 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB94147D274D2EC9001DF799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8498D749819B868CA1D48BA /* Pods_comicApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		029B12A86543B4F0A5D177DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				817B20360A2A773F5A07526B /* Pods_comicApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A57F9D8D4D15B84AC5C56D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09C4304DBED68E8490E0D46C /* Pods-comicApp.debug.xcconfig */,
+				9239E2D7F531C637D8F2A293 /* Pods-comicApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB48A2BE274F8751003DD45D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EB9414A0274D2FF7001DF799 /* DetailsPageViewController.h */,
+				EB9414A1274D2FF7001DF799 /* DetailsPageViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		EB48A2BF274F876B003DD45D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB9414AA274D30C0001DF799 /* ComicResponse.h */,
+				EB9414AB274D30C0001DF799 /* ComicResponse.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB48A2C0274F877B003DD45D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EB9414B1274D357E001DF799 /* HomePageViewController.h */,
+				EB9414B0274D357E001DF799 /* HomePageViewController.m */,
+				EB9414A5274D3077001DF799 /* ComicCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EB48A2C1274F87A4003DD45D /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB941494274D2ECA001DF799 /* Info.plist */,
+				EB94148F274D2ECA001DF799 /* Assets.xcassets */,
+				EB941491274D2ECA001DF799 /* LaunchScreen.storyboard */,
+				EB94148C274D2EC9001DF799 /* Main.storyboard */,
+				EB941483274D2EC9001DF799 /* AppDelegate.h */,
+				EB941484274D2EC9001DF799 /* AppDelegate.m */,
+				EB941495274D2ECA001DF799 /* main.m */,
+			);
+			name = "Supported Files";
+			sourceTree = "<group>";
+		};
+		EB941477274D2EC9001DF799 = {
+			isa = PBXGroup;
+			children = (
+				EB941482274D2EC9001DF799 /* comicApp */,
+				EB941481274D2EC9001DF799 /* Products */,
+				5A57F9D8D4D15B84AC5C56D6 /* Pods */,
+				029B12A86543B4F0A5D177DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB941481274D2EC9001DF799 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB941480274D2EC9001DF799 /* comicApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB941482274D2EC9001DF799 /* comicApp */ = {
+			isa = PBXGroup;
+			children = (
+				EB48A2C1274F87A4003DD45D /* Supported Files */,
+				EB48A2C0274F877B003DD45D /* Home */,
+				EB48A2BE274F8751003DD45D /* Detail */,
+				EB48A2BF274F876B003DD45D /* Model */,
+			);
+			path = comicApp;
+			sourceTree = "<group>";
+		};
+		EB9414A5274D3077001DF799 /* ComicCell */ = {
+			isa = PBXGroup;
+			children = (
+				EB9414A6274D3091001DF799 /* ComicTableViewCell.h */,
+				EB9414A7274D3091001DF799 /* ComicTableViewCell.m */,
+			);
+			name = ComicCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB94147F274D2EC9001DF799 /* comicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB941499274D2ECA001DF799 /* Build configuration list for PBXNativeTarget "comicApp" */;
+			buildPhases = (
+				9BAA4C0F55CA113DA5AA402A /* [CP] Check Pods Manifest.lock */,
+				EB94147C274D2EC9001DF799 /* Sources */,
+				EB94147D274D2EC9001DF799 /* Frameworks */,
+				EB94147E274D2EC9001DF799 /* Resources */,
+				039C9B03F8F3D785F1A2503D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = comicApp;
+			productName = comicApp;
+			productReference = EB941480274D2EC9001DF799 /* comicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB941478274D2EC9001DF799 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EB94147F274D2EC9001DF799 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = EB94147B274D2EC9001DF799 /* Build configuration list for PBXProject "comicApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB941477274D2EC9001DF799;
+			productRefGroup = EB941481274D2EC9001DF799 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB94147F274D2EC9001DF799 /* comicApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB94147E274D2EC9001DF799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB941493274D2ECA001DF799 /* LaunchScreen.storyboard in Resources */,
+				EB941490274D2ECA001DF799 /* Assets.xcassets in Resources */,
+				EB94148E274D2EC9001DF799 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		039C9B03F8F3D785F1A2503D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-comicApp/Pods-comicApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-comicApp/Pods-comicApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-comicApp/Pods-comicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BAA4C0F55CA113DA5AA402A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-comicApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB94147C274D2EC9001DF799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9414A2274D2FF7001DF799 /* DetailsPageViewController.m in Sources */,
+				EB941485274D2EC9001DF799 /* AppDelegate.m in Sources */,
+				EB9414A8274D3091001DF799 /* ComicTableViewCell.m in Sources */,
+				EB9414AC274D30C0001DF799 /* ComicResponse.m in Sources */,
+				EB9414B2274D357E001DF799 /* HomePageViewController.m in Sources */,
+				EB941496274D2ECA001DF799 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB94148C274D2EC9001DF799 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB94148D274D2EC9001DF799 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB941491274D2ECA001DF799 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB941492274D2ECA001DF799 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB941497274D2ECA001DF799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB941498274D2ECA001DF799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB94149A274D2ECA001DF799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09C4304DBED68E8490E0D46C /* Pods-comicApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = comicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furkan.comicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB94149B274D2ECA001DF799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9239E2D7F531C637D8F2A293 /* Pods-comicApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = comicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furkan.comicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB94147B274D2EC9001DF799 /* Build configuration list for PBXProject "comicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB941497274D2ECA001DF799 /* Debug */,
+				EB941498274D2ECA001DF799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB941499274D2ECA001DF799 /* Build configuration list for PBXNativeTarget "comicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB94149A274D2ECA001DF799 /* Debug */,
+				EB94149B274D2ECA001DF799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB941478274D2EC9001DF799 /* Project object */;
+}
