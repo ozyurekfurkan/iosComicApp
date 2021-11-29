@@ -8,6 +8,15 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@interface Thumbnail : NSObject
+
+@property (nonatomic) NSString *path;
+@property (nonatomic) NSString *extension;
+
+-(instancetype) getThumbnail:(NSDictionary*) thumbnail;
+
+@end
+
 
 @interface Result : NSObject
 
@@ -31,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSNumber *available;
 @property (nonatomic) NSString *collectionURI;
 @property (nonatomic) NSString *series;
+@property (nonatomic) Thumbnail *thumbnail;
 
 - (NSArray *)getResults:(NSArray *)results;
 

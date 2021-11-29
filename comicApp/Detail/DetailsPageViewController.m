@@ -29,6 +29,14 @@
 
     NSString *pageCount = [self.selectedResult.pageCount stringValue];
     [self.comicImage setImageWithURL:[NSURL URLWithString:self.selectedResult.resourceURI] placeholderImage:[UIImage imageNamed:@"comicImage"]];
+    NSString *formatImage = [NSString stringWithFormat:@"%@.%@",self.selectedResult.thumbnail.path,self.selectedResult.thumbnail.extension];
+    NSURL *imgUrl = [NSURL URLWithString:formatImage];
+    NSData *imgData = [NSData dataWithContentsOfURL:imgUrl];
+    UIImage *image = [UIImage imageWithData:imgData];
+    [self.comicImage setImage: image];
+    
+    
+    
     self.title = self.selectedResult.title;
     if(self.selectedResult.format == nil || [self.selectedResult.format isEqualToString:@""]) {
         self.formatValueLabel.text = @"Format: No Data!";

@@ -7,6 +7,17 @@
 
 #import "ComicResponse.h"
 
+@implementation Thumbnail
+
+-(instancetype) getThumbnail:(NSDictionary*) thumbnail{
+    self.path = [thumbnail valueForKey:@"path"];
+    self.extension = [thumbnail valueForKey:@"extension"];
+    
+    return self;
+}
+
+@end
+
 @implementation Result
 
 - (NSArray *)getResults:(NSArray *)results {
@@ -16,9 +27,10 @@
         resultModel.title = [result valueForKey:@"title"];
         resultModel.format =  [result valueForKey:@"format"];
         resultModel.pageCount =  [result valueForKey:@"pageCount"];
+        resultModel.thumbnail = [[Thumbnail alloc]getThumbnail:[result valueForKey:@"thumbnail"]];
+       
         [resultList addObject:resultModel];
     }
-    
     return [NSArray arrayWithArray:resultList];
 }
 

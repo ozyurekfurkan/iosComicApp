@@ -11,6 +11,7 @@
 #import "ComicResponse.h"
 //POD
 #import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 #import <NSHash/NSString+NSHash.h>
 #import <NSHash/NSData+NSHash.h>
 
@@ -18,8 +19,10 @@
 @interface HomePageViewController () <UITableViewDelegate , UISearchBarDelegate , UITableViewDataSource>
 
 @property (nonatomic) ComicResponse *comicResponse;
+@property (nonatomic) Thumbnail *thumbnail;
 @property (nonatomic) Result *selectedResult;
-@property(nonatomic) NSInteger *numOfSections;
+@property (nonatomic) NSInteger *numOfSections;
+
 @end
 
 @implementation HomePageViewController
@@ -31,7 +34,11 @@
     [self.tableView setLayoutMargins:UIEdgeInsetsZero];
     self.tableView.delegate = self;
     self.searchBar.delegate = self;
-    self.tableView.rowHeight = 230;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:1 green:0 blue:0.1 alpha:1];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.searchBar.backgroundColor =[UIColor colorWithRed:1 green:0 blue:0.1 alpha:1];
+    self.searchBar.barTintColor =[UIColor colorWithRed:1 green:0 blue:0.1 alpha:1];
+    self.searchBar.searchTextField.textColor = [UIColor whiteColor];
 }
 
 -(void)getComics:(NSString *)searchText {
@@ -128,11 +135,18 @@
         cell.backgroundColor = [UIColor whiteColor];
     } else {
         
-        cell.backgroundColor = [UIColor lightGrayColor];
+        cell.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
     }
     Result *result = self.comicResponse.data.results[indexPath.row];
     [cell.comicImageView setImage:[UIImage imageNamed:@"comicImage"]];
     cell.comicTitleLabel.text = result.title;
+    NSString *formatImage = [NSString stringWithFormat:@"%@.%@",result.thumbnail.path,result.thumbnail.extension];
+//TEST URL https://b.thumbs.redditmedia.com/q5wEnBMrwNwf4g9s6Ju35QfuE3cpw4Gjr883zJHGBUY.png
+// JSON URL https://i.annihil.us/u/prod/marvel/i/mg/b/40/4bc64020a4ccc.jpg
+    NSURL *imgUrl = [NSURL URLWithString:formatImage];
+    NSData *imgData = [NSData dataWithContentsOfURL:imgUrl];
+    UIImage *image = [UIImage imageWithData:imgData];
+    [cell.comicImageView setImageWithURL:imgUrl];
     
     return cell;
 }
